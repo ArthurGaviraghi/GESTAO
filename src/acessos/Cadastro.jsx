@@ -33,7 +33,8 @@ export default function Cadastro() {
   };
 
   return (
-    <div>
+      <div class='flex'>
+    <div class='conteiner'>
       <h2>Cadastro</h2>
       <input
         type="text"
@@ -43,7 +44,7 @@ export default function Cadastro() {
       />
       <input
         type="text"
-        placeholder="email"
+        placeholder="Email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
@@ -55,5 +56,6 @@ export default function Cadastro() {
       />
       <button onClick={cadastrar}>Criar Conta</button>
     </div>
+      </div>
   );
 }
