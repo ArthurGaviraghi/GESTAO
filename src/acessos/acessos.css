@@ -109,7 +109,8 @@ li button:hover {
 
 .tx {
   text-align: center;
-  width: 10%;
+  width: 200px;
+  height:200px;
   margin-right: 20%;
   color: #0d0664;
   font-weight: 700;
