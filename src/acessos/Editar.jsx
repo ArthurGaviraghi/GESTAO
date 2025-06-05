@@ -27,10 +27,11 @@ export default function EditarTarefa() {
   }
 
   return (
-    <div>
+    <div class='flex'>
+    <div class='conteiner'>
       <h2>Editar Tarefa</h2>
       <input value={descricao} onChange={(e) => setDescricao(e.target.value)} />
       <button onClick={salvar}>Salvar Alterações</button>
-    </div>
+    </div>    </div>
   )
 }
