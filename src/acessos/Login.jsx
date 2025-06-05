@@ -11,7 +11,7 @@ export default function Login() {
 
   const logar = async () => {
     try {
-      const res = await axios.post('https://api-tarefas-z3r7.onrender.com/login', { email, senha })
+      const res = await axios.post('https://api-tarefas-g9x2.onrender.com/login', { email, senha })
       localStorage.setItem('token', res.data.token)
       navigate('/tarefas')
     } catch {

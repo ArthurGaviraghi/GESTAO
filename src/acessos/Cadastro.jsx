@@ -14,7 +14,7 @@ export default function Cadastro() {
     }
 
     try {
-      const resposta = await axios.post('https://api-tarefas-z3r7.onrender.com/usuario', {
+      const resposta = await axios.post('https://api-tarefas-g9x2.onrender.com/usuario', {
         nome,
         email,
         senha,

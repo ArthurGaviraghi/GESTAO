@@ -10,7 +10,7 @@ export default function CriarTarefa() {
 
   const salvar = async () => {
     try {
-      await axios.post('https://api-tarefas-z3r7.onrender.com/tarefa', 
+      await axios.post('https://api-tarefas-g9x2.onrender.com/tarefa', 
         { descricao },
         { headers: { Authorization: `Bearer ${token}` } }
       );

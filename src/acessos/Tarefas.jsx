@@ -10,14 +10,14 @@ export default function Tarefas() {
   const token = localStorage.getItem('token')
 
   const carregar = async () => {
-    const res = await axios.get('https://api-tarefas-z3r7.onrender.com/tarefa', {
+    const res = await axios.get('https://api-tarefas-g9x2.onrender.com/tarefa', {
       headers: { Authorization: `Bearer ${token}` }
     })
     setTarefas(res.data.tarefas)
   }
 
   const excluir = async (id) => {
-    await axios.delete(`https://api-tarefas-z3r7.onrender.com/tarefa/${id}`, {
+    await axios.delete(`https://api-tarefas-g9x2.onrender.com/tarefa/${id}`, {
       headers: { Authorization: `Bearer ${token}` }
     })
     carregar()
